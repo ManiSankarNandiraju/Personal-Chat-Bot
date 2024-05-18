@@ -1,0 +1,113 @@
+body{
+  background-color: black;
+}
+/* Chatbot.css */
+.chatbot-container {
+  position: fixed;
+  bottom: 180px;
+  right: 140px;
+  width: 500px;
+  height: 500px;
+  background-color: #f5f8fb;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #002f50;
+  max-height: 58px;
+}
+
+.chatbot-messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  max-width: 50%; /* Limit message width to 50% */
+  word-wrap: break-word; /* Wrap long messages */
+}
+
+.message-container {
+  width: 100%;
+}
+
+.bot {
+  background-color: #00aaa5;
+  color: white;
+  border-radius: 20px 20px 20px 1px;
+  align-self: flex-start;
+  max-width: 80%; /* Limit width of bot messages */
+}
+.user {
+  background-color: #cccccc;
+  color: black;
+  border-radius: 20px 20px 1px 20px;
+  align-self: flex-end;
+  max-width: 80%; /* Limit width of user messages */
+}
+
+.user-message {
+  align-self: flex-end; /* Align user messages to the right */
+  background-color: #cccccc;
+  color: black;
+  border-radius: 20px 20px 1px 20px;
+  text-align: justify;
+}
+
+.bot-message {
+  align-self: flex-start; /* Align bot messages to the left */
+  background-color: #00aaa5;
+  color: white;
+  border-radius: 20px 20px 20px 1px;
+  text-align: justify;
+}
+
+
+.chatbot-input {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.chatbot-input button {
+  padding: 10px;
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 120px;
+  right: 180px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  border: none;
+  background: none;
+}

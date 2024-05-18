@@ -1,0 +1,26 @@
+{
+    "model_type": "SVC",
+    "parameters": {
+      "kernel": "linear",
+      "C": 1.0
+    },
+    "vocabulary": {
+      "education": 0,
+      "experience": 1,
+      "skills": 2,
+      "study": 3,
+      "work": 4,
+      "qualifications": 5,
+      "abilities": 6
+
+    },
+    "idf": [0.1, 0.2, 0.3, 0.1, 0.2, 0.3, 0.4],
+    "classes": ["education", "experience", "skills"],
+    "coef_": [
+      [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7],
+      [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+      [0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+
+    ]
+  }
+  
